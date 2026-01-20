@@ -51,4 +51,33 @@ print('Set:', my_set_var)
 my_dictionary_var = {'nome': 'Pedro Henrique', 'age': 20}
 print('Dictionary:', my_dictionary_var)
 
-#
+#Tupla: Coleção em que sua ordem é inalteravel, delimitada por colchetes, como (7, 8, 4)
+my_tuple_var = (7,5,8)
+print('Tuple:', my_tuple_var)
+
+#Intervalo: Uma sequência de números, frequentemente usado em loops, por exemplo, range(5)
+my_range_var = range(5)
+print('Range:', my_range_var)
+
+#Lista: Uma coleção ordenada de elementos que suporta diferentes tipos de dados
+my_list = [22,'Hello World', 3.14, True]
+print(my_list)
+
+#Nenhum: Um valor especial que representa a ausência de um valor
+my_none_var = None
+print('None:', my_none_var)
+
+#Para obter o tipo de dados de uma variável, você pode usar a type() função:
+my_var_1 = 'Hello World'
+my_var_2 = 21
+
+print(type (my_var_1))
+print(type (my_var_2))
+
+#A função integrada isinstance verifica se uma variável corresponde a um tipo de dado específico
+#Ela recebe um objeto e o tipo que deseja se comparar, retornando um valor booleano.
+
+isinstance('Hello Word', str) #true
+isinstance(True, bool) #true
+isinstance(42, int) #true
+isinstance('Pedro', int) #false
