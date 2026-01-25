@@ -69,3 +69,28 @@ print(my_str_7 [6]) #W
 print(my_str_7 [-1])#d
 print(my_str_7 [-2])#l
 
+'''
+Algumas linguagens agrupam os tipos de dados como primitivos ou de referência.
+-Primitivo: simples e imutáveis, ou seja, não podem ser alterados depois de serem
+-declarados.
+-Referência: podem conter múltiplos valores e são mutáveis ou imutáveis.
+Em python, todos os dados são tratados como objetos, sendo alguns mutáveis e outros
+imutáveis. 
+
+Como já dito, dados imutáveis não podem ser alterados após declarados. 
+Mas pode apontar as variáveis desses objetos para algo novo, sendo chamado
+esse processo de reassignment, mas não pode alterar o objeto original adicionado,
+removendo ou substituindo qualquer um de seus elementos.
+
+No caso, strings são do tipo imutáveis em Python. Significa que pode reatribuir uma
+string diferente a uma variável:
+'''
+#Exemplo:
+greeting = 'hi'
+greeting = 'hello'
+print(greeting) #hello
+
+#Mas a modificação direta de uma string não é permitida:
+greeting = 'hi'
+greeting [0] = 'H'
+#TypeError: 'str' object does not support item assignment
